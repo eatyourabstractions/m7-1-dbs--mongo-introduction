@@ -1,0 +1,71 @@
+
+
+GET http://localhost:8000/exercise-1/users HTTP/1.1
+###
+
+POST  http://localhost:8000/exercise-1/users HTTP/1.1
+Content-Type: application/json
+
+{"name": "michael"}
+
+###
+
+POST  http://localhost:8000/exercise-2/greeting HTTP/1.1
+Content-Type: application/json
+
+{
+  "lang": "English",
+  "_id": "EN",
+  "hello": "Hello"
+}
+
+###
+
+POST  http://localhost:8000/exercise-2/greeting HTTP/1.1
+Content-Type: application/json
+
+{
+  "lang": "French",
+  "_id": "FR",
+  "hello": "Bonjour"
+}
+
+###
+
+POST  http://localhost:8000/exercise-2/greeting HTTP/1.1
+Content-Type: application/json
+
+{
+  "lang": "Italian",
+  "_id": "IT",
+  "hello": "Ciao"
+}
+
+###
+
+POST  http://localhost:8000/exercise-2/greeting HTTP/1.1
+Content-Type: application/json
+
+{
+  "lang": "Spanish",
+  "_id": "ES",
+  "hello": "Hola"
+}
+
+###
+
+GET http://localhost:8000/exercise-2/getGreeting/AB HTTP/1.1
+
+
+###
+
+GET http://localhost:8000/ex-2/greeting?start=5&limit=5 HTTP/1.1
+
+###
+
+GET http://localhost:8000/ex-2/greeting HTTP/1.1
+
+###
+
+DELETE http://localhost:8000/ex-2/greeting/AB HTTP/1.1
+###
